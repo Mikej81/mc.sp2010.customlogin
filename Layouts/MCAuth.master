@@ -1,0 +1,70 @@
+﻿<%@ Master Language="c#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="html">
+<head id="Head1" runat="server">
+    <title>SharePoint 2010 FBA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead1" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css" media="screen">
+        @import url('MCstyle.css');
+    </style>
+    <style type="text/css">
+        #header
+        {
+            width: 975px;
+            height: 148px;
+            background: url('MCImages/header.jpg') no-repeat left bottom;
+        }
+    </style>
+</head>
+<body onload="if (typeof(body_onload) == 'function') window.setTimeout('body_onload();', 500);">
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header" class="clearfix">
+            <div id="title">
+                <a href="#">Custom Login</a></div>
+            <div id="desc">
+                Custom Login</div>
+        </div>
+        <div id="content">
+            <div id="home">
+                <div id="boxes" class="clearfix">
+                    <div id="boxleft">
+                    </div>
+                    <div id="loginform">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div id="boxright">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac lorem tellus. Integer arcu elit, dapibus iaculis rhoncus eu, ullamcorper posuere felis. Nulla facilisi. Proin volutpat sollicitudin porttitor. Aliquam congue, lectus ac posuere blandit, est dolor adipiscing lacus, nec commodo nisi odio ac dolor. Fusce rutrum consectetur diam, id lacinia justo facilisis eu. Donec luctus placerat massa, eu placerat sem dictum quis. Integer lectus leo, ultrices vitae lobortis quis, bibendum at metus. In cursus tellus id ante eleifend elementum. Nullam et vehicula sapien. Donec in velit a tellus condimentum tincidunt. Morbi vitae turpis massa, sed cursus urna. Vivamus tincidunt convallis odio ac dignissim.
+
+Donec gravida sollicitudin urna, eget tempus ligula scelerisque et. Duis sapien lectus, pellentesque ut sodales mollis, aliquam ac dui. Aliquam erat volutpat. Proin sit amet egestas ligula. Ut sit amet mauris turpis. Vivamus ac fringilla lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac aliquam quam. Sed ullamcorper porta nulla id lobortis. Quisque porttitor nibh in velit varius non ultricies nibh ornare. Etiam vitae dapibus nulla. Integer sodales, dui et consectetur ullamcorper, nibh eros suscipit enim, sit amet venenatis risus urna ut libero. Nam volutpat odio et velit elementum non pulvinar sapien imperdiet. Donec scelerisque rhoncus nibh sit amet accumsan. Aliquam ultricies vulputate tincidunt. Morbi at libero metus. Ut id dui lorem.
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;">
+            </div>
+            <div id="footer">
+                <ul id="footernav">
+                    
+                </ul>
+           
+            </div>
+        </div>
+        <asp:Panel ID="Panel1" runat="server" Visible="false">
+            <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PlaceHolderPageTitleInTitleArea" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PlaceHolderSiteName" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

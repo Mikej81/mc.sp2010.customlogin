@@ -1,0 +1,707 @@
+﻿/*  
+Theme Name: iCompany
+Author URI: http://icompany.ithemes.com/
+Version: 2.4
+Author: Von Glitschka
+Description: iCompany is a Premium WordPress Theme from iThemes.com designed for business/company websites who want an integrated blog component
+
+All the CSS, design, and images are copyrighted by iThemes Media. Please don't steal.
+All WordPress functions and code licensed under GPL: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+.twocol ul { width:200px; } /* this could be any length in px or % */
+.twocol ul li { width: 40%; float: left; list-style: circle; padding-left: 18px; margin: 0px;}
+
+
+
+
+#header {
+background:transparent url(http://pringle-quinn.com/pqa-header.jpg) no-repeat scroll left bottom !important;
+height:148px;
+width:975px;
+}
+
+html, body { margin: 0; padding: 0; }
+
+body { 
+	background: #B0B0B0 url('body-bg.gif');
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+body * {margin: 0px; padding: 0px;}
+
+.clearfix:after { content: "."; display: block; clear: both; margin: 0px; padding: 0px; height: 0; visibility: hidden; }
+
+/*********************************************
+		Link Styles
+*********************************************/
+a {
+	color: #3366cc;
+	text-decoration: underline;
+}
+a:hover { color: #999; text-decoration: underline; }
+
+/*********************************************
+		Text Elements
+*********************************************/
+p, ul, ol, blockquote {color: #333;}
+ol, ul {
+	margin: 5px 35px;
+}
+blockquote {
+	margin: 5px 0px 5px 10px;
+	padding: 0px 0px 0px 10px;
+	border-left: 1px solid #999;
+}
+img { border: 0px; background: none; }
+p {
+	padding: 5px 0px;
+	margin: 0px;
+}
+/*********************************************
+		Header Styles
+*********************************************/
+h1 { /* This style used as title on single posts and pages */
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0px; padding: 10px 0px 0px 0px;
+	color: #000;
+	text-decoration: none;
+}
+h1 a {
+	color: #000;
+	text-decoration: none;
+}
+h1 a:hover {
+	color: #666;
+	text-decoration: none;
+}
+h2 { /* This style used as header in the sidebars */
+	font-size: 15px;
+	color: #333;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+}
+h3 { /* This style used as the post titles on homepage/archive */
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0px; padding: 10px 0px 5px 0px;
+	color: #545454;
+	text-decoration: none;
+}
+h3 a {
+	color: #545454;
+	text-decoration: none;
+}
+h3 a:hover {
+	color: #666;
+	text-decoration: none;
+}
+h4 { /* This style used as title for comments and as the identifying header on archive page  */
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-size: 15px;
+	padding: 10px 0px 5px 0px;
+	margin: 0px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*********************************************
+		Container Div
+*********************************************/
+#container {
+	background: url('container-bg.gif') repeat-y center top;
+	text-align: left;
+    margin: 0px auto;
+    width: 975px;
+    padding: 0px 0px;
+}
+.have_sidebar { /* insert a new bg image to give a sidebar bg */
+	background: url('container-bg-sidebar.gif') repeat-y center top;
+}
+
+/*********************************************
+		Header Styles
+*********************************************/
+#header {
+	background: url('header.jpg') no-repeat;
+	width: 1000px; height: 148px;
+	margin: 0px; padding: 0px;
+	display: block;
+	position: relative;
+}
+#header #title {
+	display: block;
+	width: 450px;
+	float: left;
+	color: #FFF;
+	font-size: 36px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin: 0px; padding: 45px 0px 6px 30px;
+	letter-spacing: -1.5px;
+display: none
+}
+#header #title a {
+	color: #FFF;
+	text-decoration: none;
+display: none
+}
+#header #title a:hover {
+	color: #FFF;
+	text-decoration: none;
+display: none
+}
+#header #desc {
+	clear: both;
+	display: block;
+	width: 417px;
+	float: left;
+	color: #ccc;
+	font-size: 20px;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: normal;
+	margin: 0px; padding: 0px 0px 0px 33px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+display: none
+}
+#search {
+	position:absolute;
+	top:7px;
+	width:965px;
+	text-align:right;
+}
+#search form {
+	display: block;
+	margin: 0px; padding: 0px 0px 0px 0px;
+	background: url('search.gif') no-repeat right 5px;
+}
+#search form #submit {
+	width: 10px;
+	background: transparent;
+	border: none;
+	margin: 0px; padding: 0px;
+}
+
+/*********************************************
+		Horizontal Navigaion Styles
+*********************************************/
+#menu {
+	background: #494949 url('menu-bg.gif') repeat-x;
+	color: #FFF;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	text-align: left;	
+	text-transform: uppercase;
+	padding: 0px 0px;
+	margin: 0px;
+	height: 22px;
+	display: block;
+	clear: both;
+}
+#menu ul {
+	margin: 0px; padding: 0px;
+	height: 22px;
+}
+#menu ul li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 0px; padding: 0px;
+}
+#menu ul li a {
+	display: block;
+	color: #FFF;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 22px;
+	border-right: 1px solid #565656;
+	border-left: 1px solid #969696;
+	}
+#menu ul li.home a {
+	border-left: 0px;
+}
+/* if you want to set a "current page item" style, do it here */
+#menu ul li.current_page_item a {
+	background: #494949 url('menu-bg.gif') repeat-x 0px -22px;
+	color: #FFF;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 22px;
+}
+#menu ul li a:hover {
+	background: #494949 url('menu-bg.gif') repeat-x 0px -22px;
+	color: #ccc;
+	margin: 0px; padding: 0px 15px;
+	text-decoration: none;
+	line-height: 22px;
+	}
+	
+/*********************************************
+		Content Div
+*********************************************/
+#content {
+	float: left;
+	margin: 0px; padding: 0px;
+	width: 975px;
+	display: block;
+	border: 0px solid black;
+}
+#content img {
+	float: left;
+	margin: 0px 10px 5px 0px;
+}
+.post-more { /* Use this class to style the "more" tag */
+}
+.post-more a, .post-more a:visited { /* Use this class to style the link within the post-more div */
+}
+
+/*********************************************
+		If is Homepage
+*********************************************/
+#loginform{
+    width: 300px;
+    border: 1px solid #000000;
+    text-align: center;
+    display: block;
+	margin: 0px; padding: 0px 15px;
+	float: left;
+	width: 250px;
+
+				}
+#home {
+	margin: 0px; padding: 0px;
+	width: 975px;
+	display: block;
+	background: #FFF;
+}
+
+#home #feature {
+	margin: 0px; padding: 15px;
+	width: 975px;
+	display: block;
+	background: #333;
+}
+#home #feature a {
+	color: #fff;
+	text-decoration: underline;
+}
+#home #feature a:hover { color: #fff; text-decoration: none; }
+
+#home #feature img {
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+#home #feature h3, #home #feature p {
+	color: #FFF;
+}
+#home #boxes {
+	clear: both;
+	margin: 0px; padding: 20px 0px 15px 0px;
+	width: 970px;
+	display: block;
+}
+#home #boxes  a {
+	color: #000;
+	text-decoration: underline;
+}
+#home #boxes  a:hover { color: #000; text-decoration: none; }
+
+#home #boxes h2 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #949599;
+	border-bottom: 1px solid #686868;
+	margin: 0px 0px 10px 0px; padding: 0px 0px 8px 20px;
+	background: url('tab_document.png') no-repeat 0px 0px;
+}
+#home #boxes p {
+}
+#home #boxleft {
+	display: block;
+	margin: 0px; padding: 0px 25px;
+	float: left;
+	width: 100px;
+}
+#home #boxmiddle {
+	display: block;
+	margin: 0px; padding: 0px 15px;
+	float: left;
+	width: 250px;
+}
+#home #boxright {
+	display: block;
+	margin: 0px; padding: 0px 20px 0px 25px;
+	float: left;
+	width: 350px;
+}
+
+/*********************************************
+		If is NOT Homepage
+*********************************************/
+.inner {
+	/*background: url(images/inner-bg.gif) top left repeat-y;*/
+}
+#inner {
+	display: block;
+	float: left;
+	width: 465px;
+	margin: 0px; padding: 10px 15px;
+	height:100%;
+}
+
+/*********************************************
+		Post Meta Styles
+*********************************************/
+.meta-top {
+	clear: both; /* we need this so floats in the post are cleared */
+	padding: 10px 5px 10px 5px;
+	margin: 10px 0px 10px 0px;
+	color: #333;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.meta-top a {
+	color: #333;
+	text-decoration: none;
+}
+.meta-top a:hover {
+	color: #AAA;
+	text-decoration: underline;
+}
+.meta-bottom {
+	clear: both; /* we need this so floats in the post are cleared */
+	padding: 5px 0px;
+	margin: 0px 0px 15px 0px;
+	border-bottom: 1px solid #333;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.meta-bottom a {
+	color: #333;
+	text-decoration: none;
+}
+.meta-bottom a:hover {
+	color: #333;
+	text-decoration: none;
+}
+.meta-date {
+	margin: 0px; padding: 0px 0px 0px 0px;
+}
+.meta-author {
+	margin: 0px 0px;
+}
+.meta-comments {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url('comments.png') no-repeat left 2px;
+}
+.meta-category {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url('folder.png') no-repeat left 0px;
+}
+.meta-more {
+	margin: 0px; padding: 0px 8px 0px 18px;
+	background: url('continue_reading.png') no-repeat left 0px;
+}
+
+/*********************************************
+		Previous/Next Page Navigation
+*********************************************/
+.page-nav {
+	clear: both; /* To clear any floats */
+	margin: 0px; padding: 10px 0px;
+}
+.nav-previous {
+	width: 249px; 
+	float: left; 
+	text-align: left;
+}
+.nav-next {
+	width: 249px; 
+	float: right; 
+	text-align: right;
+}
+
+/*********************************************
+		Right Sidebar
+*********************************************/
+#r_sidebar {
+	display: inline;
+	float: right;
+	width: 175px;
+	margin: 0px; 
+	padding: 18px 0px 0px 0px;
+	display: block; /* floats are handled as block elements, this is to fix 
+							   a margin collapsing bug in IE */
+}
+#r_sidebar h2 {
+	font-size: 14px;
+	color: #333;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+}
+
+
+#r_sidebar h3 {
+	font-size: 14px;
+	color: #333;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+}
+
+#r_sidebar h2.archives {
+	padding: 0px 20px 5px 0px;
+	background: url('calendar.png') no-repeat right 2px;
+}
+#r_sidebar h2.categories {
+	padding: 0px 20px 5px 0px;
+	background: url('folder.png') no-repeat right 2px;
+}
+#r_sidebar h2.links {
+	padding: 0px 20px 5px 0px;
+	background: url('display.png') no-repeat right 2px;
+}
+#r_sidebar h2.posts {
+	padding: 0px 20px 5px 0px;
+	background: url('tab_document.png') no-repeat right 2px;
+}
+#r_sidebar h2.feeds {
+	padding: 0px 20px 5px 0px;
+	background: url('rss.png') no-repeat right 2px;
+}
+#r_sidebar p {
+	padding: 5px;
+}
+#r_sidebar img {
+	text-align: center;
+}
+#r_sidebar form {
+	padding: 0px;
+	margin: 5px;
+}
+#r_sidebar ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+#r_sidebar ul li {
+	padding: 0px 0px 10px 0px;
+}
+#r_sidebar ul li ul {
+	padding: 0px 0px 0px 0px;
+}
+#r_sidebar ul li ul li {
+	padding: 0px;
+	margin: 0px;
+}
+#r_sidebar ul li ul li a {
+	color: #888;
+	text-decoration: none;
+}
+#r_sidebar ul li ul li a:hover {
+	color: #666666;
+	text-decoration: underline;
+}
+#r_sidebar ul li ul li ul {
+	padding: 0px;
+	margin: 0px;
+}
+#r_sidebar ul li ul li ul li {
+	padding: 0px;
+	margin: 5px 10px 5px 5px;
+}
+
+
+/*********************************************
+		Tabber Lower Sidebar Styles
+*********************************************/
+
+#tabber_sidebar {
+	padding: 0px;
+	margin: 20px 0px 10px 0px;
+}
+#tabber_sidebar h2 {
+	font-size: 14px;
+	color: #333;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px; padding: 5px;
+	border-bottom: 1px solid #333;
+	list-style-type: none;
+}
+#tabber_sidebar ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+}
+#tabber_sidebar ul li {
+	list-style-type: none;
+	padding: 0px 0px 10px 0px;
+}
+#tabber_sidebar ul li ul {
+	padding: 0px 0px 0px 0px;
+
+
+
+}
+
+#tabber_sidebar ul li ul li {
+	padding: 0px;
+	margin: 10px 0;
+	text-align:left;
+	
+}
+#tabber_sidebar ul li ul li a {
+	color: #888;
+	text-decoration: none;
+}
+#tabber_sidebar ul li ul li a:hover {
+	color: #666666;
+	text-decoration: underline;
+}
+#tabber_sidebar ul li ul li ul {
+	padding: 0px;
+	margin: 0px;
+}
+#tabber_sidebar ul li ul li ul li {
+	padding: 0px;
+	margin: 5px 10px 5px 5px;
+}
+
+/*********************************************
+		Comment Styles
+*********************************************/
+#comments {
+	padding: 8px;
+}
+#comments .even {
+	margin: 5px 0px 5px 0px;
+	padding: 10px;
+	background: #FFFFFF;
+	overflow: hidden;
+	border-bottom: 1px dotted #B7B7B7;
+}
+#comments .odd {
+	margin: 5px 0px 5px 0px;
+	padding: 10px;
+	background: #FFFFFF;
+	overflow: hidden;
+	border-bottom: 1px dotted #B7B7B7;
+}
+
+/*********************************************
+		Footer Styles
+*********************************************/
+#footer {
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+	clear: both;
+	background: #000;
+	color: #AAA;
+	text-align: left;
+	font-size: 11px;
+}
+#footer a {
+	color: #AAA;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+#footer #footernav {
+	list-style-type: none;
+	margin: 0px; padding: 0px 0px 8px 0px;
+}
+#footer #footernav li {
+	display: inline;
+	border-left: 1px solid #DDD;
+	margin: 0px; padding: 0px 10px 0px 10px;
+}
+#footer #footernav li.home {
+	border: none;
+	margin: 0px; padding: 0px 10px 0px 0px;
+}
+#footer #footernav li a {
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px; padding: 0px;
+}
+#footer #footernav li a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*********************************************
+		Footer 2 Styles
+*********************************************/
+#footer2 {
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+	clear: both;
+	background: #336cc;
+	color: #AAA;
+	text-align: left;
+	font-size: 11px;
+}
+#footer2 a {
+	color: #AAA;
+	text-decoration: none;
+}
+#footer2 a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+#footer2 #footernav2 {
+	list-style-type: none;
+	margin: 0px; padding: 0px 0px 8px 0px;
+}
+#footer2 #footernav2 li {
+	display: inline;
+	border-left: 1px solid #DDD;
+	margin: 0px; padding: 0px 10px 0px 10px;
+}
+#footer2 #footernav2 li.home {
+	border: none;
+	margin: 0px; padding: 0px 10px 0px 0px;
+}
+#footer2 #footernav2 li a {
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px; padding: 0px;
+}
+#footer2 #footernav2 li a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+.RSSIcon {
+float:right;
+display:block;
+}

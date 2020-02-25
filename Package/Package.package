@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2c0fe106-b28e-4b58-be39-c230d95bafe3" solutionId="2c0fe106-b28e-4b58-be39-c230d95bafe3" resetWebServer="false" name="MC.SP2010.CustomLogin" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="9bc068b6-8350-4206-898f-a9b5d7ae68e1" />
+  </projectItems>
+</package>
